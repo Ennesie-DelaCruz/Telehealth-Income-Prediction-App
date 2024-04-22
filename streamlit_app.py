@@ -41,9 +41,9 @@ def income_prediction(input_data):
         # Check the prediction and print the result
         if prediction[0]== '<50k':
             print(prediction)
-            return 'Earns less than 50k'
+            return 'Earns less than 50k thus, eligible'
         else:
-            return 'Earns more than 50k'
+            return 'Earns more than 50k thus, ineligible'
 
 
 def main():
@@ -57,9 +57,9 @@ def main():
     h_insurance =('No', 'Yes')
     education =('Higher', 'Secondary', 'Primary or less')
     occupation =('Sales and services', 'Professional/technical/managerial','Others')
-    airtime_spend =('> N1000', 'N100 - N500', 'N500 - N1000', '< N100')
+    airtime_spend =('< N100', 'N100 - N500', 'N500 - N1000','> N1000' )
     
-    Children_number =st.slider("How many children do you have", 0,50,1)
+    Children_number =st.slider("How many children do you have", 0,5,1)
     Car_Truck =st.selectbox("Do you own a truck or car", car_truck)
     H_Insurance =st.selectbox("Do you have health insurance", h_insurance)
     Education =st.selectbox("What is your level of education", education)
