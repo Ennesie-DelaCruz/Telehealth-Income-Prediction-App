@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-with open('C:/Users/Ernest Ezeogu/Documents/R Scripts/telehealth.pkl', 'rb') as file:
+with open('telehealth.pkl', 'rb') as file:
         data = pickle.load(file)
 
 loaded_model = data['model']
