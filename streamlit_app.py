@@ -40,7 +40,7 @@ def main():
     h_insurance = ('No', 'Yes')
     education = ('Higher', 'Secondary', 'Primary or less')
     occupation = ('Sales and services', 'Professional/technical/managerial', 'Others')
-    airtime_spend = ('< N100','> N1000', 'N100 - N500', 'N500 - N1000')
+    airtime_spend = ('< N100', 'N100 - N500', 'N500 - N1000', '> N1000')
     
     Children_number = st.slider("How many children do you have", 0, 20, 1)
     Car_Truck = st.selectbox("Do you own a truck or car", car_truck)
